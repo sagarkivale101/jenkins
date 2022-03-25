@@ -4,7 +4,7 @@ node {
       checkout scm  
     }
      stage('Build docker Image'){
-      app = docker.build("samk101/git_clone")
+      app = docker.build("samk101/dockerdemo")
     }
      stage('Test Image'){
        app.inside {
